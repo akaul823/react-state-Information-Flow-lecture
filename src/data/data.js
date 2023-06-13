@@ -1,4 +1,4 @@
-export const cakes=[
+export const data=[
     {
         "id":1,
         "name":"chocolate cake",
