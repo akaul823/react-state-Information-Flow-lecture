@@ -1,5 +1,5 @@
 body{
-  font-size:1rem;
+  font-size:2rem;
 }
 
 p.intro{
@@ -22,12 +22,14 @@ p.intro{
 .App-header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
+  padding:1rem;
+  background-color:orange;
 }
 
-header{
-  background-color:orange;
+.App-header h1, .App-header div{
+  margin:1rem;
 }
 
 .cake p{
@@ -54,6 +56,44 @@ header{
 
 .cake{
   margin:1rem;
+}
+
+.search{
+  width:50%;
+  margin:1rem auto;
+}
+
+.search input, .search button{
+  border-radius: 5px;
+  font-family: sans-serif;
+  padding:1.5rem;
+  font-size:1.5rem;
+}
+
+.search button{
+  width:25%;
+  background-color: orange;
+  font-weight: 900;
+}
+
+.search input[type="text"]{
+  width:50%;
+}
+
+.cart-icon img{
+  width:64px;
+  height:64px;
+  vertical-align:middle;
+  border-radius: 100px;
+  margin:1rem;
+}
+
+.cart-icon span{
+  font-size:2rem;
+}
+
+.hide-cart{
+  display: none;
 }
 
 /*
