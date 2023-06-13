@@ -1,6 +1,6 @@
 import heart from "../images/heart.jpeg"
 
-function Cake({cake:{id,name,image,description,price}}){
+function Cake({cake:{id,name,image,description,price,likes}}){
 
     const cakeImgStyle={width:"500px",height:"500px", borderRadius:"10px",boxShadow:"5px 5px 5px black"} 
     
@@ -13,7 +13,7 @@ function Cake({cake:{id,name,image,description,price}}){
             <button>add to cart</button>
             <div className="likes">
                 <img src={heart} alt="like" style={{width:"32px",height:"32px",verticalAlign:"middle"}} />
-                <span style={{fontSize:"24px"}}>0 likes</span>
+                <span style={{fontSize:"24px"}}>{likes} likes</span>
             </div>
         </div>
     )
